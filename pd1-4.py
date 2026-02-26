@@ -1,4 +1,3 @@
-# Provided data set
 nodes = [
     "Srv-web-01;192.168.1.10;15;UP",
     "Srv-db-01;192.168.1.20;450;UP",
