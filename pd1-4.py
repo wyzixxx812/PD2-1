@@ -13,22 +13,17 @@ nodes = [
 ]
 
 def find_servers_by_network():
-    # Take user input
     network_prefix = input("Enter a portion of the IP address (e.g., 192.168): ")
     
     print(f"\n--- Servers in network {network_prefix} ---")
     found = False
-    
-    # Filter and display results
+
     for node in nodes:
-        # Check if the entered prefix exists in the node string
         if network_prefix in node:
             print(node)
             found = True
             
     if not found:
         print("No servers found for this network.")
-
-# Run the function
 if __name__ == "__main__":
     find_servers_by_network()
